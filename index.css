@@ -8,8 +8,8 @@ body {
 }
 
 .JSCalc {
+    display: inline-block;
     border: solid 4px white;
     border-radius: 65px;
-    margin-left: 40%;
-    margin-right: 40%;
+    padding: 1%;
 }
