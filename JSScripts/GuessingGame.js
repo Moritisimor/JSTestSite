@@ -4,15 +4,6 @@ const questionPar           = document.getElementById("questionPar");
 const correctnessPar        = document.getElementById("correctnessPar");
 let correctAnswer;
 
-function checkAnswer(correctAnswer) {
-    let answer = document.getElementById("answerTxt").value;
-    if (answer.toLowerCase() === correctAnswer) {
-        return true;
-    } else {
-        return false;
-    }
-}
-
 genQuestionButton.addEventListener("click", () => {
     let randomQuestion = Math.floor(Math.random() * 5);
     if (randomQuestion === 0) {
@@ -34,7 +25,10 @@ genQuestionButton.addEventListener("click", () => {
 })
 
 submitAnswerButton.addEventListener("click", () => {
-    if (checkAnswer(correctAnswer)) {
+    let answer = document.getElementById("answerTxt").value;
+    if (correctAnswer === undefined) {
+        alert("Generate a question first!");
+    } else if (answer.toLowerCase() === correctAnswer) {
         alert("Your answer was correct!");
     } else {
         alert("Your answer was incorrect!");
