@@ -1,8 +1,8 @@
-const addButton = document.getElementById("AddButton");
-const subtractButton = document.getElementById("SubtractButton");
-const mulitplyButton = document.getElementById("MultiplyButton");
-const divideButton = document.getElementById("DivideButton");
-const ResultTxt = document.getElementById("ResultPar");
+const addButton         = document.getElementById("AddButton");
+const subtractButton    = document.getElementById("SubtractButton");
+const mulitplyButton    = document.getElementById("MultiplyButton");
+const divideButton      = document.getElementById("DivideButton");
+const ResultTxt         = document.getElementById("ResultPar");
 
 function calculate(operator) {
     let x = parseFloat(document.getElementById("xtxt").value);
