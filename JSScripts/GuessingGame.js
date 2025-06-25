@@ -4,23 +4,23 @@ const questionPar           = document.getElementById("questionPar");
 const correctnessPar        = document.getElementById("correctnessPar");
 let correctAnswer;
 
+function makeQuiz(functionQuestion, functionCorrectAnswers){
+    questionPar.textContent = functionQuestion;
+    correctAnswer = functionCorrectAnswers;
+}
+
 genQuestionButton.addEventListener("click", () => {
     let randomQuestion = Math.floor(Math.random() * 5);
     if (randomQuestion === 0) {
-        questionPar.textContent = "What does www in websites stand for?";
-        correctAnswer = "world wide web";
+        makeQuiz("What does www in websites stand for?", "world wide web");
     } else if (randomQuestion === 1) {
-        questionPar.textContent = "Who painted the Mona Lisa?";
-        correctAnswer = ["leonardo da vinci" , "leonardo davinci", "da vinci"];
+        makeQuiz("Who painted the Mona Lisa?", ["leonardo da vinci", "leonardo davinci", "da vinci"]);
     } else if (randomQuestion === 2) {
-        questionPar.textContent = "The bishop of Rome is known as?";
-        correctAnswer = ["pope", "the pope"];
+        makeQuiz("What is the Bishop of Rome known as also?", ["pope", "the pope"]);
     } else if (randomQuestion === 3) {
-        questionPar.textContent = "How many star wars movies are there?";
-        correctAnswer = ["9", "nine"];
+        makeQuiz("How many Star Wars movies are there?", ["9", "nine"]);
     } else if (randomQuestion === 4) {
-        questionPar.textContent = "What is the national sport of Japan?";
-        correctAnswer = ["sumo", "sumo wrestling"];
+        makeQuiz("What is the national sport of Japan?", ["sumo", "sumo wrestling"]);
     }
 })
 
