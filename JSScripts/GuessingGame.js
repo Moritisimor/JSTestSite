@@ -11,7 +11,7 @@ genQuestionButton.addEventListener("click", () => {
         correctAnswer = "world wide web";
     } else if (randomQuestion === 1) {
         questionPar.textContent = "Who painted the Mona Lisa?";
-        correctAnswer = ["leonardo da vinci" , "leonardo davinci"];
+        correctAnswer = ["leonardo da vinci" , "leonardo davinci", "da vinci"];
     } else if (randomQuestion === 2) {
         questionPar.textContent = "The bishop of Rome is known as?";
         correctAnswer = ["pope", "the pope"];
