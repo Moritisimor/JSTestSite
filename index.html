@@ -8,33 +8,39 @@
     <meta charset="utf-8">
 </head>
 <body>
-    <h1>Welcome to my site, where I test Javascript!</h1>
-    <h2>Javascript Calculator</h2>
-    <div class="JSCalc">
-        <p>Enter your First Number: </p>
-        <textarea id="xTxt"></textarea>
-        <p>Enter your Second Number:</p>
-        <textarea id="yTxt"></textarea> <br>
-        <button id="addButton">Add!</button>
-        <button id="subtractButton">Subtract!</button> <br>
-        <button id="multiplyButton">Multiply!</button>
-        <button id="divideButton">Divide!</button>
-        <p>Your Result:</p>
-        <p id="resultPar"></p>
-        <button id="pasteResultInField1Button">Put Result into Field 1!</button> <br>
-        <button id="pasteResultInField2Button">Put Result into Field 2!</button>
-        <script src="JSScripts/JSCalc.js"></script>
-    </div>
-    <h2>Guessing Game</h2>
-    <div class="GuessingGame">
-        <p>Question:</p>
-        <p id="questionPar"></p>
-        <button id="genQuestionButton">Generate a question!</button>
-        <p>Your Answer:</p>
-        <textarea id="answerTxt"></textarea> <br>
-        <button id="submitAnswerButton">Submit!</button>
-        <p id="correctnessPar"></p>
-        <script src="JSScripts/GuessingGame.js"></script>
-    </div>
+    <section class="Top">
+        <h1>Welcome to my site, where I test JavaScript!</h1>
+        <p>This is a simple learning project for me to learn and test out JavaScript, HTML and CSS</p>
+    </section>
+    <section class="Main">
+        <div class="JSCalc">
+            <h2>Javascript Calculator</h2>
+            <p>Enter your First Number: </p>
+            <textarea id="xTxt"></textarea>
+            <p>Enter your Second Number:</p>
+            <textarea id="yTxt"></textarea> <br>
+            <button id="addButton">Add!</button>
+            <button id="subtractButton">Subtract!</button> <br>
+            <button id="multiplyButton">Multiply!</button>
+            <button id="divideButton">Divide!</button>
+            <p>Your Result:</p>
+            <p id="resultPar"></p>
+            <button id="pasteResultInField1Button">Put Result into Field 1!</button> <br>
+            <button id="pasteResultInField2Button">Put Result into Field 2!</button>
+            <script src="JSScripts/JSCalc.js"></script>
+        </div>
+        <br>
+        <div class="GuessingGame">
+            <h2>Guessing Game</h2>
+            <p>Question:</p>
+            <p id="questionPar"></p>
+            <button id="genQuestionButton">Generate a question!</button>
+            <p>Your Answer:</p>
+            <textarea id="answerTxt"></textarea> <br>
+            <button id="submitAnswerButton">Submit!</button>
+            <p id="correctnessPar"></p>
+            <script src="JSScripts/GuessingGame.js"></script>
+        </div>
+    </section>
 </body>
 </html>
