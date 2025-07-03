@@ -1,23 +1,15 @@
 body {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     margin: 0px;
+    background: #681ee8;
+    background: linear-gradient(205deg, rgba(104, 30, 232, 1) 0%, rgba(87, 199, 147, 1) 50%, rgba(237, 139, 83, 1) 100%);
 }
-.Top {
-    background: #e8801e;
-    background: linear-gradient(45deg,rgba(232, 128, 30, 1) 0%, rgba(199, 98, 87, 1) 50%, rgba(83, 132, 237, 1) 100%);
-    padding: 5%;
-}
-.Main {
-    background: #000000;
-    background: linear-gradient(205deg,rgba(104, 30, 232, 1) 0%, rgba(87, 199, 147, 1) 50%, rgba(237, 139, 83, 1) 100%);
-    margin: 0px;
-    padding: 0px;
-}
+
 .JSCalc, .GuessingGame {
     display: inline-block;
-    border: solid 4px white;
+    border: solid 4px rgb(255, 255, 255);
     border-radius: 65px;
     margin-top: 3%;
     margin-bottom: 1%;
